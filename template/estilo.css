@@ -1,0 +1,41 @@
+:root {
+    /* CSS HEX */
+    --deep-space-sparkle: #3a606eff;
+    --steel-teal: #607b7dff;
+    --xanadu: #828e82ff;
+    --laurel-green: #aaae8eff;
+    --gainsboro: #e0e0e0ff;
+
+    /* CSS HSL */
+    --deep-space-sparkle: hsla(196, 31%, 33%, 1);
+    --steel-teal: hsla(184, 13%, 43%, 1);
+    --xanadu: hsla(120, 5%, 53%, 1);
+    --laurel-green: hsla(68, 16%, 62%, 1);
+    --gainsboro: hsla(0, 0%, 88%, 1);
+
+}
+
+body {
+    background: var(--xanadu);
+    font: normal 15pt Arial;
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.384);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
