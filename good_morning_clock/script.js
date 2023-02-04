@@ -18,10 +18,10 @@ function Load(){
         sc.style.transform = `rotateZ(${seconds}deg)`
 
         hours = hours / 30
-        minutes = minutes / 6
-        seconds = seconds / 6
+        minutes = minutes / 6 < 10 ? '0' + minutes / 6 : minutes / 6
+        seconds = seconds / 6 < 10 ? '0' + seconds / 6 : seconds / 6
 
-        msg.innerHTML = `<p>Agora são ${hours} : ${minutes} : ${seconds}</p>`
+        msg.innerHTML = `<p>${hours}:${minutes}:${seconds}</p>`
         function setup(bgcolor, fontcolor) {
             document.body.style.background = bgcolor
             document.getElementById('title').style.color = fontcolor //change title text color to black
