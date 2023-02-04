@@ -1,4 +1,4 @@
 #javascript-study
 
-[label](https://www.cursoemvideo.com/curso/javascript/)
+[Curso em Video](https://www.cursoemvideo.com/curso/javascript/)
 
