@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Good Morning Clock</title>
+		<link rel="stylesheet" href="estilo.css" />
+	</head>
+	<body onload="Load()">
+		<header>
+			<h1 id="title"></h1>
+		</header>
+
+        <div id="clock-container">
+            <div id="clock">
+
+                <div id='sc' class="circle" style="--clr:#3a606e;"><i></i></div>
+                <div id="mn" class="circle circle2" style="--clr:#aaae8e;"><i></i></div>
+                <div id='hr' class="circle circle3" style="--clr:#e0e0e0;"><i></i></div>3
+
+                <span style="--i:1;"><b>1</b></span>
+                <span style="--i:2;"><b>2</b></span>
+                <span style="--i:3;"><b>3</b></span>
+                <span style="--i:4;"><b>4</b></span>
+                <span style="--i:5;"><b>5</b></span>
+                <span style="--i:6;"><b>6</b></span>
+                <span style="--i:7;"><b>7</b></span>
+                <span style="--i:8;"><b>8</b></span>
+                <span style="--i:9;"><b>9</b></span>
+                <span style="--i:10;"><b>10</b></span>
+                <span style="--i:11;"><b>11</b></span>
+                <span style="--i:12;"><b>12</b></span>
+                
+            </div>
+            <div id="msg"></div>
+            <a id="new-wallpaper"><img src="./refresh-ccw.svg" alt="Refresh button" /></a>
+        </div>
+
+		<footer>
+			<p id="footer">&copy;Javascript-study by mayconblopes</p>
+		</footer>
+		<script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+	</body>
+</html>

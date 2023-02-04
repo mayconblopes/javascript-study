@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family-Poppins:200,300,400,500,600,700,800,900&display=swap')
+
+:root {
+    /* CSS HEX */
+    --deep-space-sparkle: #3a606eff;
+    --steel-teal: #607b7dff;
+    --xanadu: #828e82ff;
+    --laurel-green: #aaae8eff;
+    --gainsboro: #e0e0e0ff;
+
+    /* CSS HSL */
+    --deep-space-sparkle: hsla(196, 31%, 33%, 1);
+    --steel-teal: hsla(184, 13%, 43%, 1);
+    --xanadu: hsla(120, 5%, 53%, 1);
+    --laurel-green: hsla(68, 16%, 62%, 1);
+    --gainsboro: hsla(0, 0%, 88%, 1);
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    /* background: var(--xanadu); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70vh;
+    font: normal 15pt;
+}
+
+#clock-container {
+    position: relative;
+    min-height: 300px;
+    background: #aaae8e;
+    border-radius: 10px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+
+    /* padding: 15px; */
+    width: 310px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.384),
+    inset 10px 10px 70px rgba(0,0,0,0.25),
+    inset 5px 5px 10px rgba(0,0,0,0.5),
+    inset -5px -5px 15px rgba(0,0,0,.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#clock {
+    background-image: url('https://picsum.photos/300');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 8px solid black;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.384),
+    inset 10px 10px 70px rgba(0,0,0,0.25),
+    inset 5px 5px 10px rgba(0,0,0,0.5),
+    inset -5px -5px 15px rgba(0,0,0,.75);
+    
+}
+
+#clock::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #aaae8e;
+    border: 3px solid black;
+    border-radius: 50%;
+    z-index: 100000;
+}
+
+#clock span {
+    position: absolute;
+    inset: 7px;
+    text-align: center;
+    transform: rotate(calc(30deg*var(--i))) /* 360/12 = 30deg */
+    
+}
+
+#clock span b {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #e0e0e0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /* put a black line-border on text-font */
+    opacity: 0.55;
+    display: inline-block;
+    transform: rotate(calc(-30deg * var(--i))); /* fix the numbers positions */
+}
+
+.circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    /* border: 2px solid rgba(0,0,0,0.25); */
+    /* border: 1px dashed var(--clr); */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* z-index: 10; */
+}
+
+
+/*----------------clock pointers*/
+
+/*hours */
+.circle i {
+    position: absolute;
+    width: 8px;
+    height: 50%;
+    background-color: var(--clr);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    /* opacity: 0.55; */
+    transform-origin: bottom;
+    transform: scale(0.75);
+}
+
+/*seconds*/
+.circle:nth-child(1) i {
+    width: 6px;
+}
+
+/*minutes*/
+.circle:nth-child(2) i {
+    width: 8px;
+}
+
+.circle2 {
+    width: 160px;
+    height: 160px;
+    /* z-index: 9; */
+}
+
+
+.circle3 {
+    width: 120px;
+    height: 120px;
+    /* z-index: 8; */
+}
+
+
+.circle::before {
+    content: '';
+    position: absolute;
+    top: -6.5px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: var(--clr);
+}
+
+#msg {
+    border-bottom: 1px solid black;
+}
+
+#new-wallpaper {
+    cursor: pointer;
+    margin: 10px 0;
+
+}
+
+footer {
+    /* color: white; */
+    text-align: center;
+    font-style: italic;
+}
