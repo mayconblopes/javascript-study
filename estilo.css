@@ -1,0 +1,40 @@
+:root {
+	/* CSS HEX */
+	--light-green: #7ddf64ff;
+	--yellow-green-crayola: #c0df85ff;
+	--burlywood: #deb986ff;
+	--candy-pink: #db6c79ff;
+	--paradise-pink: #ed4d6eff;
+
+	/* CSS HSL */
+	--light-green: hsla(108, 66%, 63%, 1);
+	--yellow-green-crayola: hsla(81, 58%, 70%, 1);
+	--burlywood: hsla(35, 57%, 70%, 1);
+	--candy-pink: hsla(353, 61%, 64%, 1);
+	--paradise-pink: hsla(348, 82%, 62%, 1);
+}
+
+body {
+	background: var(--burlywood);
+	font: normal 15pt Arial;
+}
+
+header {
+	text-align: center;
+	color: black;
+}
+
+section {
+	background: white;
+	border-radius: 10px;
+	padding: 15px;
+	width: 300px;
+	margin: auto;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.384);
+}
+
+footer {
+	color: black;
+	text-align: center;
+	font-style: italic;
+}
