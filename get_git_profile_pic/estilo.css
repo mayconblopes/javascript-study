@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+:root {
+	/* CSS HEX */
+	--dark-jungle-green: #202a25ff;
+	--plump-purple: #5f4bb6ff;
+	--little-boy-blue: #86a5d9ff;
+	--fluorescent-blue: #26f0f1ff;
+	--tea-green: #c4ebc8ff;
+
+	/* CSS HSL */
+	--dark-jungle-green: hsla(150, 14%, 15%, 1);
+	--plump-purple: hsla(251, 42%, 50%, 1);
+	--little-boy-blue: hsla(218, 52%, 69%, 1);
+	--fluorescent-blue: hsla(180, 88%, 55%, 1);
+	--tea-green: hsla(126, 49%, 85%, 1);
+}
+
+body {
+	background: var(--little-boy-blue);
+	font-family: Itim, sans-serif;
+	font: normal 15pt;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    min-height: 60vh;
+}
+
+header {
+	text-align: center;
+	color: black;
+}
+
+header h1 {
+    border-bottom: 5px solid var(--tea-green);
+    padding: 0 10px;
+}
+
+section {
+	background: #c4ebc8;
+	border-radius: 10px;
+	padding: 15px;
+	width: 300px;
+	margin: auto;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.384);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#dev-name {
+	margin-top: 15px;
+	padding: 10px;
+	width: 80%;
+	border: 1px solid var(--fluorescent-blue);
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.514);
+    color: var(--little-boy-blue);
+    font-weight: bold;
+}
+
+#avatar {
+	width: 200px;
+	height: 200px;
+	background-image: url('http://unicietec.unievangelica.edu.br/wp-content/uploads/2017/04/avatar-placeholder-300x250.png');
+	background-color: white;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	border: 1px solid var(--fluorescent-blue);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.486);
+	margin: 2em 0;
+}
+
+footer {
+	color: black;
+	text-align: center;
+	font-style: italic;
+}
